@@ -3,7 +3,7 @@ package com.company;
 public class Piece {
 
     Position position;
-    Game game;
+    Game game = new Game();
 
     boolean isValidMove(Position newPosition){
         if (newPosition.row > 0 && newPosition.column > 0 && newPosition.row < game.board.length
